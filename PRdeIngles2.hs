@@ -33,9 +33,9 @@ reducir bop (NCte n) (NCte m) = NCte (evalNBinOp bop n m)
 reducir bop  ex1      ex2     = NBOp bop ex1 ex2
 
 evalNBinOp :: NBinOp -> Int -> Int -> Int
-evalNBinOp Add e1 e2 = (+) e1 e2
-evalNBinOp Sub e1 e2 = (-) e1 e2
-evalNBinOp Mul e1 e2 = (*) e1 e2
-evalNBinOp Div e1 e2 = div e1 e2
-evalNBinOp Mod e1 e2 = mod e1 e2
-evalNBinOp Pow e1 e2 = (^) e1 e2
+evalNBinOp Add  = (+) 
+evalNBinOp Sub  = (-) 
+evalNBinOp Mul  = (*) 
+evalNBinOp Div  = div 
+evalNBinOp Mod  = mod 
+evalNBinOp Pow  = (^) 
